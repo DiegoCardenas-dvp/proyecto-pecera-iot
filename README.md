@@ -7,7 +7,7 @@
 ![Platform](https://img.shields.io/badge/Plataforma-ESP32%20%7C%20Raspberry%20Pi-blue?style=for-the-badge)
 ![Protocol](https://img.shields.io/badge/Protocolo-MQTT-orange?style=for-the-badge)
 
-<img src="assets/IMG_1502.jpg" alt="Vista general del proyecto AquaSmart" width="800"/>
+<img src="assets/IMG_1502.jpeg" alt="Vista general del proyecto AquaSmart" width="800"/>
 
 *Proyecto de Internet de las Cosas (IoT) diseñado para automatizar el cuidado de una pecera. El sistema controla una bomba de agua, automatiza un dispensador de comida casero y monitorea la temperatura del agua en tiempo real mediante un panel web.*
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 🌟 Características Principales
+## Características Principales
 
 * 🌡️ **Monitoreo de Temperatura:** Lectura en tiempo real del agua usando una sonda sumergible DS18B20.
 * 🐠 **Alimentación Automatizada:** Control de un servomotor integrado a un dispensador casero para suministrar raciones exactas de comida.
@@ -24,7 +24,7 @@
 
 ---
 
-## 📐 Arquitectura y Software
+## Arquitectura y Software
 
 El diseño se basa en un modelo descentralizado de publicación/suscripción mediante el protocolo **MQTT**.
 
@@ -42,7 +42,7 @@ El diseño se basa en un modelo descentralizado de publicación/suscripción med
 ## 🛠️ Hardware y Circuito
 
 <div align="center">
-  <img src="assets/IMG_1503.jpg" alt="Conexiones electrónicas generales" width="700"/>
+  <img src="assets/IMG_1503.jpeg" alt="Conexiones electrónicas generales" width="700"/>
   <br>
   <em>Circuito principal de control y etapa de potencia montados en la pared</em>
 </div>
@@ -51,13 +51,13 @@ El diseño se basa en un modelo descentralizado de publicación/suscripción med
 
 <table align="center">
   <tr>
-    <td align="center"><img src="assets/IMG_1506.jpg" width="350"/><br><em>Microcontrolador ESP32</em></td>
-    <td align="center"><img src="assets/IMG_1505.jpg" width="350"/><br><em>Circuito con Resistencia Pull-Up</em></td>
+    <td align="center"><img src="assets/IMG_1506.jpeg" width="350"/><br><em>Microcontrolador ESP32</em></td>
+    <td align="center"><img src="assets/IMG_1505.jpeg" width="350"/><br><em>Circuito con Resistencia Pull-Up</em></td>
   </tr>
 </table>
 
 <div align="center">
-  <img src="assets/IMG_1504.jpg" alt="Módulo Relevador" width="400"/>
+  <img src="assets/IMG_1504.jpeg" alt="Módulo Relevador" width="400"/>
   <br>
   <em>Etapa de potencia: Módulo Relevador controlando la bomba</em>
 </div>
@@ -72,7 +72,7 @@ El diseño se basa en un modelo descentralizado de publicación/suscripción med
 * 1x Resistencia de 4.7kΩ (Pull-up).
 * 1x Bomba de agua sumergible.
 
-> **⚠️ Requisito Crítico de Alimentación:**
+> **Requisito Crítico de Alimentación:**
 > Debido al consumo síncrono del módulo Wi-Fi, la bobina del relevador y el servomotor (~1.5A pico), el circuito del ESP32 **debe ser alimentado por una fuente dedicada de 5V a 2A** (Mínimo). Alimentar el sistema a través del puerto USB de la PC provocará caídas de voltaje.
 
 ### Diagrama de Conexiones (Pinout ESP32)
@@ -85,15 +85,15 @@ El diseño se basa en un modelo descentralizado de publicación/suscripción med
 
 ---
 
-## 🔨 Dispensador Casero de Alimento
+## Dispensador Casero de Alimento
 
 Para resolver la dosificación sin usar impresión 3D, se diseñó un ingenioso mecanismo utilizando tubería de PVC y la tapa plástica fijada al aspa del motor.
 
 <table align="center">
   <tr>
-    <td align="center"><img src="assets/IMG_1507.jpg" width="250"/><br><em>1. Fijación</em></td>
-    <td align="center"><img src="assets/IMG_1508.jpg" width="250"/><br><em>2. Acoplamiento</em></td>
-    <td align="center"><img src="assets/IMG_1509.jpg" width="250"/><br><em>3. Finalizado</em></td>
+    <td align="center"><img src="assets/IMG_1507.jpeg" width="250"/><br><em>1. Fijación</em></td>
+    <td align="center"><img src="assets/IMG_1508.jpeg" width="250"/><br><em>2. Acoplamiento</em></td>
+    <td align="center"><img src="assets/IMG_1509.jpeg" width="250"/><br><em>3. Finalizado</em></td>
   </tr>
 </table>
 
@@ -104,7 +104,7 @@ Para resolver la dosificación sin usar impresión 3D, se diseñó un ingenioso 
 
 ---
 
-## 🚀 Configuración y Despliegue
+## Configuración y Despliegue
 
 ### 1. Servidor Docker (Raspberry Pi)
 Clona este repositorio en tu Raspberry Pi y levanta la infraestructura de red ejecutando:
