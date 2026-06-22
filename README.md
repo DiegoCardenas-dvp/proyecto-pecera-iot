@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐟 AquaSmart IoT
+# Sistema de comedero automátco para pecera
 ### Sistema Automatizado para el Cuidado de Peceras
 
 ![Status](https://img.shields.io/badge/Status-Completado-success?style=for-the-badge)
