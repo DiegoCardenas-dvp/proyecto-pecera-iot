@@ -1,0 +1,16 @@
+# Archivos temporales de compilación de Arduino
+/build/
+/bin/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuraciones locales del editor
+.vscode/
+.idea/
+*.local
+
+# Archivos de respaldo
+*~
+*.bak

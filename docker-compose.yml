@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  # Servicio del Broker MQTT (Mosquitto)
+  mosquitto_broker:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto_broker
+    restart: always
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - mosquitto_data:/mosquitto/data
+      - mosquitto_log:/mosquitto/log
+
+  # Servicio de la interfaz de automatización (Node-RED)
+  node_red_brain:
+    image: nodered/node-red:latest
+    container_name: node_red_brain
+    restart: always
+    ports:
+      - "1880:1880"
+    volumes:
+      - node_red_data:/data
+    depends_on:
+      - mosquitto_broker
+
+volumes:
+  mosquitto_data:
+  mosquitto_log:
+  node_red_data:
