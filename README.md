@@ -107,6 +107,7 @@ Para resolver la dosificación sin usar impresión 3D, se diseñó un ingenioso 
 ## Configuración y Despliegue
 
 ### 1. Servidor Docker (Raspberry Pi)
+Video de funcionamiento del sistema: https://drive.google.com/drive/folders/1H6vibHPFN_1VaHEIQuGd3jOt_XLSVmgq
 Clona este repositorio en tu Raspberry Pi y levanta la infraestructura de red ejecutando:
 ```bash
 sudo docker compose up -d
